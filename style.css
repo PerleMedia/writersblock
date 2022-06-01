@@ -1,0 +1,69 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    color:#393c49;
+}
+
+main{
+    background:#eeecea;
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#plot-wrapper{
+    padding: 20px;
+    width:80%;
+    margin:0 auto;
+}
+#plot{
+    margin:0;
+    overflow: hidden;
+    font-size:3rem;
+    line-height:1.2em;
+    text-align:center;
+    display:inline-block;
+}
+
+#plot{
+    overflow:hidden;
+}
+#person{
+    display:inline-block;
+}
+#person::first-letter,
+#person > div:first-child > div:first-child::first-letter{
+    text-transform: uppercase;
+}
+#button-wrap{
+    width: 100%;
+    position:fixed;
+    bottom:30px;
+}
+button{
+    margin:20px auto;
+    display: block;
+    background:#e2dfdb;
+    border-radius:10px;
+    border:none;
+    padding:15px 30px;
+    font-size:.8rem;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:#79726d;
+}
+
+@media (min-width:768px){
+    #plot{
+        font-size:4rem;
+    }
+}
+
+@media (min-width:1200px){
+    #plot{
+        font-size:5rem;
+    }
+}
